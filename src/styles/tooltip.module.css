@@ -1,0 +1,32 @@
+.tooltipWrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltipText {
+    cursor: pointer;
+    transition: text-shadow 0.3s ease-in-out;
+  }
+  
+  .tooltipText:hover {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de, 0 0 55px #ff00de, 0 0 75px #ff00de;
+  }
+  
+  .tooltip {
+    position: fixed;
+    bottom: -50px; /* Start offscreen */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+  }
+  
+  .tooltipWrapper:hover .tooltip {
+    bottom: 20px; /* Move to desired position */
+    opacity: 1;
+  }
+  
