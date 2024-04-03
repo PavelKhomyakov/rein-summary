@@ -1,5 +1,5 @@
 export function setupScrollingBackground() {
-  const images = ['image1.jpg', 'image2.jpg', 'image3.png'].map(image => `images/${image}`);
+  const images = ['image1.jpg', 'image2.jpg', 'image3.png', 'image4.jpeg', 'image5.png', 'image6.png', 'image7.png'].map(image => `images/${image}`);
   const numImages = images.length;
   let currentImageIndex = 0;
   const fadeThreshold = 0.8; // Adjust this value to change when the image starts fading out
