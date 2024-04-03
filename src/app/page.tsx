@@ -2,6 +2,7 @@
 
 import { setupScrollingBackground } from './scrollingBackground.js';
 import React, { useEffect, useState } from 'react';
+import JumpingImage from './jumpingPicture';
 
 export default function Home() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -41,7 +42,7 @@ export default function Home() {
         <div className="text-block">Мама передаёт это оружие другой Маме. Они хвалят друг друга за хорошо проделанную работу и мы видим катсцену, в которой бесчисленное количество Мам и Унсоуя устремляются куда-то в сторону солнца. Конец.</div>
         <div style={{ height: '500px' }} />
         <div className="text-block">О следующей главе мы не знаем ничего, кроме названия “История Солнца и Луны”.</div>
-
+        <JumpingImage />
         <div className="text-block">Краткое описание первой главы новой арки. Далее спойлеры.</div>
 
         <div className="text-block">Игра начинается с чата в телефоне с неизвестным. Он предлагает ответить на три вопроса:</div>
