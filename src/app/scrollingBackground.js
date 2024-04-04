@@ -20,7 +20,7 @@ export function setupScrollingBackground() {
     const currentImage = imageElements[currentImageIndex];
     if (currentImage && background.style.backgroundImage !== `url(${currentImage.src})`) {
       background.style.backgroundImage = `url(${currentImage.src})`;
-      background.style.transition = 'background-image 0.5s ease-in-out';
+      background.style.transition = 'background-image 0.5s linear';
     }
   };
 }
