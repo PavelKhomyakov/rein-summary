@@ -1,0 +1,10 @@
+export const characterStory = {
+    MAMA: "",
+    RION: "A prince hailing from a kingdom on the precipice of war, Rion is ostracized by his father due to his sickly demeanor and advocation for peace. After being locked in the castle's storeroom, he meets a defective clockwork soldier, Dimos, with whom he quickly forms a close bond. The two make their way to the throne room to demand a stop to the war, only for the king to label Rion a traitor and order him killed. After a narrow escape, Rion and Dimos decide to travel the kingdom together to find a way to put a stop to the war for the sake of his people. Some time later, the pair find themselves on the outskirts of a windswept town. Looking for a place to rest, they make their way through, only to be stopped by men who recognize the boy as royalty. After a quick altercation, the two decide it best to leave the town behind, continuing their journey. Eventually, they find themselves sheltering in a dilapidated church. Rion rests in the back of the chapel, weak from both his disease and hunger, while Dimos searches for food. He is able to find a few apples, but after being offered them, Rion's body is too weak and frail to accept them. Rion soon after succumbs to his illness, Dimos continuing to protect the prince's body even in death. Over a century later, a bounty hunter, Gayle, makes her way to the church on rumors of a clockwork soldier killing anyone who comes near. When she arrives, a rusted—but still functional—Dimos protecting Rion's corpse remains. The two fight, only for the soldier to be finally struck down. Gayle checks his logs and learns of the pair's past, deciding to build a grave to mourn them before moving on.",
+    DIMOS: "",
+    FRENLIZE: ""
+};
+
+export const modalText = {
+    OLDBOY: "В Клетке герои встречают старика. Он рассказывает, что уже очень долгое время ждёт свою маму и просит посадить его обратно в историю, как это было с чёрным монстром. Увы, Мама ничем не может ему помочь. По её словам он был изгнан из истории. Старик явно знал девочку и чёрного монстра и разговаривал словно ребёнок."
+}

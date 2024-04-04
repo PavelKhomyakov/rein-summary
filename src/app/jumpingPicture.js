@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 
-const JumpingImage = ({ image, width, height, text }) => {
+const JumpingImage = ({ image, width, height, text, name }) => {
     const [isVisible, setIsVisible] = useState(false);
     const { ref, inView } = useInView({
         triggerOnce: true,
@@ -27,6 +27,7 @@ const JumpingImage = ({ image, width, height, text }) => {
                 />
             </div>
             <div className="text-block-glow" style={{ opacity: isVisible ? 1 : 0, transition: 'opacity 8s', marginLeft: '20px' }}>
+                <h3>{name}</h3>
                 {text}
             </div>
         </div>

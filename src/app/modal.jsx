@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const LatestNewsButton = () => {
+const OpenWindow = ({text}) => {
     const [showModal, setShowModal] = useState(false);
 
     const toggleNewsModal = () => {
@@ -13,11 +13,11 @@ const LatestNewsButton = () => {
             </button>
             {showModal && (
                 <div>
-                    <div className="text-block">В Клетке герои встречают старика. Он рассказывает, что уже очень долгое время ждёт свою маму и просит посадить его обратно в историю, как это было с чёрным монстром. Увы, Мама ничем не может ему помочь. По её словам он был изгнан из истории. Старик явно знал девочку и чёрного монстра и разговаривал словно ребёнок.</div>
+                    <div className="text-block">{text}</div>
                 </div>
             )}
         </div>
     );
 };
 
-export default LatestNewsButton;
+export default OpenWindow;
