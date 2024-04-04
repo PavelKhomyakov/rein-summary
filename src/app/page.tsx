@@ -4,6 +4,7 @@ import { setupScrollingBackground } from './scrollingBackground.js';
 import React, { useEffect, useState } from 'react';
 import JumpingImage from './jumpingPicture';
 import Tooltip from './tooltip';
+import LatestNewsButton from './modal';
 
 export default function Home() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -33,14 +34,20 @@ export default function Home() {
 
   return (
     <main className="text-container">
-      <div>
+      <div className="main">
         <div className="text-block">Молодая девочка в чёрном платье идёт сквозь ряды каменных башен. Спустя некоторое время она встречает левитирующее белое существо, именуемое “Мама”.</div>
         <div style={{ height: '100px' }} />
-        <JumpingImage image="/images/Mama.png" />
+        <JumpingImage image="/images/Mama.png" width="200px" height="200px" text="amogus" />
         <div className="text-block">Девочка потеряла голос и не может говорить. Но Мама успокаивает её. Мама здесь, чтобы помочь. Они продолжают путь уже вместе. Мама объясняет, что девочка потеряла не только голос. Однако, пришло время вернуть всё, что было утрачено. Пред девочкой появляется винтовая лестница. Мама говорит, что это путь в её тюрьму, именуемую “Клетка”.</div>
-        
+
         <div className="text-block">Поднявшись по лестнице они попадают в место, напоминающее прошлое. Сплошные каменные башни. Однако, здесь всюду лежит песок. Через некоторое время герои натыкаются на чёрную статую. По словам Мамы, эти странные статуи разбросаны по всей Клетке. Она не знает, кто их создал и называет их Тёмными Пугалами. Дотронувшись до Пугала, девушку засасывает внутрь. Здесь она видит историю молодого принца и его спутника, молчаливого механического солдата.</div>
-        <JumpingImage image="/images/Wanderer.png" />
+        <JumpingImage image="/images/Wanderer.png" width="200px" height="350px" text="A prince hailing from a kingdom on the precipice of war, Rion is ostracized by his father due to his sickly demeanor and advocation for peace. After being locked in the castle's storeroom, he meets a defective clockwork soldier, Dimos, with whom he quickly forms a close bond. The two make their way to the throne room to demand a stop to the war, only for the king to label Rion a traitor and order him killed. After a narrow escape, Rion and Dimos decide to travel the kingdom together to find a way to put a stop to the war for the sake of his people.
+
+Some time later, the pair find themselves on the outskirts of a windswept town. Looking for a place to rest, they make their way through, only to be stopped by men who recognize the boy as royalty. After a quick altercation, the two decide it best to leave the town behind, continuing their journey.
+
+Eventually, they find themselves sheltering in a dilapidated church. Rion rests in the back of the chapel, weak from both his disease and hunger, while Dimos searches for food. He is able to find a few apples, but after being offered them, Rion's body is too weak and frail to accept them. Rion soon after succumbs to his illness, Dimos continuing to protect the prince's body even in death.
+
+Over a century later, a bounty hunter, Gayle, makes her way to the church on rumors of a clockwork soldier killing anyone who comes near. When she arrives, a rusted—but still functional—Dimos protecting Rion's corpse remains. The two fight, only for the soldier to be finally struck down. Gayle checks his logs and learns of the pair's past, deciding to build a grave to mourn them before moving on."/>
         <div className="text-block">В процессе истории, принц и его спутник погибают от руки охотника за головами, которым овладела стая чёрных птиц. Эти существа искажают истории. И задача девушки избавляться от них, дабы восстановить истинную историю. Но ведь девочка уже об этом знает, не так ли?</div>
 
         <div className="text-block">Победив стаю, девушка очищает часть истории и возвращается обратно в Клетку. От статуи она получает посох. Мама добавляет, что задача девушки ещё и собирать подобное оружие. Герои продолжают свой путь по Клетке очищая статуи и продолжая наблюдать историю принца и механического солдата. В одной из частей мы также видим охотницу с механическими протезами, охотящуюся на принца.</div>
@@ -50,13 +57,13 @@ export default function Home() {
         <div className="text-block">Очистив от искажений 4 пугала девушка завершает историю, что хранилась в посохе. За это девочка получает “Волю”. Один из потерянных ею фрагментов. Перед героями возникает новая лестница, а, значит, путь к следующим историям.</div>
 
         <div className="text-block">Следующей историей, которую очищает девочка, оказывается история охотницы с металлическими протезами. Во время путешествия по Клетке Мама и девочка встречают странного чёрного монстра, который пытается их атаковать. Но в последнее мгновение застывает, и моментально отступает. Это происшествие остаётся загадкой.</div>
-        <JumpingImage image="/images/Hunter.png" />
+        <JumpingImage image="/images/Hunter.png" width="200px" height="350px" text="amogus" />
         <div className="text-block">Восстановив историю охотницы, девочка получает следующий фрагмент - “Надежда”. Ей предстоит ещё много исправить и она поднимается по следующей лестнице.</div>
 
-        <div className="text-block">Следующая статуя держит пистолет. И хранит в себе историю механического солдата. Во время путешествия по этой части Клетки герои снова встречают чёрного монстра. В этот раз он сбегает только завидев их.</div>
-        <JumpingImage image="/images/Dimos.png" />
-        <div className="text-block">*Странное происшествие: во время путешествия герои встречают старика. Он рассказывает, что уже очень долгое время ждёт свою маму и просит посадить его обратно в историю, как это было с чёрным монстром. Увы, Мама ничем не может ему помочь. По её словам он был изгнан из истории. Старик явно знал девочку и чёрного монстра и разговаривал словно ребёнок.*</div>
-
+        <div className="text-block">Следующая статуя держит пистолет. И хранит в себе историю механического солдата.</div>
+        <JumpingImage image="/images/Dimos.png" width="200px" height="350px" text="amogus" />
+        <LatestNewsButton />
+        <div className="text-block">Во время путешествия по этой части Клетки герои снова встречают чёрного монстра. В этот раз он сбегает только завидев их.</div>
         <div className="text-block">Восстановив финальное воспоминание из пистолета девочка получает “Молитву”. После чего продолжает путь.</div>
 
         <div className="text-block">Новая часть Клетки выглядит иначе. Всюду текут водопады и летают существа, похожие на китов. Воздух тут чистый. Статуи тут держат катану, в которой заключена история девушки-ассасина.</div>
