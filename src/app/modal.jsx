@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const OpenWindow = ({text}) => {
+const OpenWindow = ({ text }) => {
     const [showModal, setShowModal] = useState(false);
 
     const toggleNewsModal = () => {

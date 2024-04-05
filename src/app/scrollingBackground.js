@@ -15,7 +15,7 @@ export function setupScrollingBackground() {
     // Calculate the current image index based on scroll position
     const percentage = Math.min(scrollPosition / maxScroll, 1);
     currentImageIndex = Math.floor(percentage * numImages);
-    
+
     // Set the background image
     const currentImage = imageElements[currentImageIndex];
     if (currentImage && background.style.backgroundImage !== `url(${currentImage.src})`) {

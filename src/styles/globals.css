@@ -37,20 +37,28 @@
 
 .text-block-glow {
   display: inline-block;
-  background-color: rgba(0, 0, 0, 0.5); /* Black background with transparency */
-  color: white; /* White text color */
-  padding: 5px 10px; /* Adjust padding as needed */
-  margin: 5px; /* Add margin around the blocks */
-  border-radius: 5px; /* Add border radius for rounded corners */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Black background with transparency */
+  color: white;
+  /* White text color */
+  padding: 5px 10px;
+  /* Adjust padding as needed */
+  margin: 5px;
+  /* Add margin around the blocks */
+  border-radius: 5px;
+  /* Add border radius for rounded corners */
   animation: glow 1.5s infinite alternate;
 }
 
 @keyframes glow {
   from {
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Start with a small glow */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    /* Start with a small glow */
   }
+
   to {
-    box-shadow: 0 0 20px rgba(255, 0, 221, 0.5); /* Increase glow intensity */
+    box-shadow: 0 0 20px rgba(255, 238, 0, 0.5);
+    /* Increase glow intensity */
   }
 }
 
@@ -233,11 +241,11 @@ mark {
 
 button {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 8px 10px;
   background-color: #2d2d2d;
   color: #ffffff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 16px;
+  font-size: 9px;
   font-weight: bold;
   text-transform: uppercase;
   border: none;
@@ -245,6 +253,7 @@ button {
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: background-color 0.3s, transform 0.2s;
+  width: 13%
 }
 
 button:hover {
