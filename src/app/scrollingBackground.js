@@ -1,5 +1,5 @@
 export function setupScrollingBackground() {
-  const images = ['IMG01.png', 'IMG02.png', 'IMG03.png', 'IMG04.png', 'IMG05.png','image1.jpg', 'image2.jpg', 'image3.png', 'image4.jpeg', 'image5.png', 'image6.png', 'image7.png'].map(image => `images/${image}`);
+  const images = ['IMG01.png', 'IMG02.png', 'IMG03.png', 'IMG04.png', 'IMG05.png'].map(image => `images/${image}`);
   const numImages = images.length;
   let currentImageIndex = 0;
 

@@ -22,12 +22,12 @@ const JumpingImage = ({ image, width, height, text, name }) => {
                         transition: 'transform 1s',
                         width: width || '200px',
                         height: height || '200px',
-                        filter: 'drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5))'
+                        filter: 'drop-shadow(12px 10px 8px rgba(0, 0, 0, 0.8))'
                     }}
                 />
             </div>
             <div className="text-block-glow" style={{ opacity: isVisible ? 1 : 0, transition: 'opacity 8s', marginLeft: '20px' }}>
-                <h3>{name}</h3>
+                <h3><b>{name}</b></h3>
                 {text}
             </div>
         </div>
