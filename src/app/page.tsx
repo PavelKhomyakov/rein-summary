@@ -35,7 +35,7 @@ export default function Home() {
 
   return (
     <main className="text-container">
-      <div className="scrolling-text">
+      <div>
         <h1><center>Акт 1: История Девочки и Монстра</center></h1>
         <div style={{ height: '5600px' }} />
         <div className="text-block">Молодая девочка в чёрном платье идёт сквозь ряды каменных башен.</div>
