@@ -55,7 +55,6 @@ export default function Home() {
 
           <div className="text-block">Следующая статуя держит пистолет. И хранит в себе историю механического солдата.</div>
           <JumpingImage image="/images/Dimos.png" width="191px" height="350px" text={characterStory.DIMOS} name="Димос" />
-          <OpenWindow text={modalText.OLDBOY} />
           <div className="text-block">Во время путешествия по этой части Клетки герои снова встречают чёрного монстра. В этот раз он сбегает только завидев их.</div>
           <div className="text-block">Восстановив финальное воспоминание из пистолета девочка получает <b>“Молитву”</b>. После чего продолжает путь.</div>
 
@@ -93,7 +92,6 @@ export default function Home() {
           <JumpingImage image="/images/Lars.png" width="200px" height="350px" text={characterStory.LARS} name="Ларс" />
           <div className="text-block">Очистив их от искажений Левания получает очередной сон. Перевозчик возвращается, а Заместитель уходит. Четвертая ночь, путешествие продолжает по тому же шаблону. Теперь статуи держат пистолет с историей капитана. Эта история связана с прошлой.</div>
           <JumpingImage image="/images/Griff.png" width="165px" height="350px" text={characterStory.GRIFF} name="Гриф" />
-          <div className="text-block">*Персонажи встречают маленького мальчика, который потерял маму. Они убегали от солдат, но он внезапно оказался в Клетке и не понимает, что происходит. По словам Перевозчика это очень редкое явление. Мать мальчика погибла в истории, но Фио не хочет сообщать мальчику плохие новости и предлагает ему путешествовать с ними. Он присоединяется к отряду. Не надолго, уже у следующей статуи он покидает отряд и остаётся дальше ждать мать.*</div>
           <div className="text-block">Очередная история очищена, Левания съедает новый сон. Однако, Фио чувствует себя не очень хорошо и возвращается в свой мир. По словам Перевозчика, похоже, на её самочувствие влияют какие-то события в её собственном мире.</div>
           <div className="text-block">Ночь пятая. Фио слаба, но как обычно бодра. Впереди новые статуи, на этот раз с копьём. Они содержат историю девушки-оружия.</div>
           <JumpingImage image="/images/Noelle.png" width="222px" height="350px" text={characterStory.NOELLE} name="Ноэль" />
@@ -108,7 +106,20 @@ export default function Home() {
           <div className="text-block">На этой ноте они оба превращаются в оружие. Мама говорит, что, наконец-то, их истории восстановлены. Мы видим, как Мама передаёт другой Маме оружие Фио и Левании. Это было нелёгкое приключение. Воспоминания обоих были очень сильно повреждены. Мама упоминает, что они должны собрать все истории. После чего присоединяется к огромному потоку из Мам и Перевозчиков, летящих сквозь башни Клетки.</div>
 
           <h1><center>Акт 2: История Солнца и Луны</center></h1>
+          <JumpingImage image="/images/Yuzuki.png" width="147px" height="350px" text={characterStory.YUZUKI} name="Юзуки" />
+          <JumpingImage image="/images/Yurie.png" width="147px" height="350px" text={characterStory.YURIE} name="Юриэ" />
+          <JumpingImage image="/images/Priyet.png" width="147px" height="350px" text={characterStory.PRIYET} name="Пуриэ" />
+          <JumpingImage image="/images/Dark_Mama.png" width="147px" height="350px" text={characterStory.DARK_MAMA} name="Темная Мама и ребенок" />
+          <JumpingImage image="/images/Yudil.png" width="147px" height="350px" text={characterStory.YUDIL} name="Юдиль" />
+          <JumpingImage image="/images/Marie.png" width="147px" height="350px" text={characterStory.MARIE} name="Мари" />
+          <JumpingImage image="/images/Hina.png" width="147px" height="350px" text={characterStory.HINA} name="Хина" />
+          <JumpingImage image="/images/Papa.png" width="147px" height="350px" text={characterStory.PAPA} name="Папа" />
+          <JumpingImage image="/images/Saryu.png" width="147px" height="350px" text={characterStory.SARYU} name="Сарью" />
+          <JumpingImage image="/images/SARAFA.png" width="147px" height="350px" text={characterStory.SARAFA} name="Сарафа" />
+
           <h1><center>Акт 3: История людей и мира</center></h1>
+          <JumpingImage image="/images/10H.png" width="147px" height="350px" text={characterStory.TENH} name="10H" />
+          <JumpingImage image="/images/Pod_006.png" width="147px" height="350px" text={characterStory.POD} name="Pod 006" />
           <div className="text-block">Мама говорит, что все персонажи игры не более чем воспоминания, сохраненные в оружии. А клетка это место, где эти воспоминания хранятся. Раньше Клетка выглядела как на 1 скриншоте, но бесконечные атаки врагов превратили её в то место, что мы видим в игре.</div>
 
           <div className="text-block">Говоря проще, в Клетке хранятся воспоминания, Мамы перерабатывают их в оружие, которым мы кромсаем врагов со времен Drakengard.</div>

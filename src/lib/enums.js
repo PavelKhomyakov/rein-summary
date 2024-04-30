@@ -12,7 +12,19 @@ export const characterStory = {
     GRIFF: "",
     NOELLE: "",
     FIO: "A girl with a cheery demeanor despite her circumstances, Fio is described as being from a small town in a faraway country. Her parents often fought because of her father losing his job, due to the country's strict rules on social class and mobility. Her and her family were considered 'Goat People,' a class below Commoners created by the country's Nobles to suppress dissent. The Goat People were often ridiculed, harassed, and abused, as well as forced to wear collars and manacles to show their status. During this time Fio also suffers from recurring nightmares, finding herself in The Cage and meeting Levania. The two make an agreement—in exchange for Levania eating her dreams and getting rid of her nightmares, Levania can become human. Fio's father is killed when he attempts to get back his job in the town's barracks. Devastated by this, Fio returns to her mother, only to discover that she was having an affair and plans to leave. Alone, Fio slowly goes hungry and laments on how no one will care for her because she is a Goat—eventually being forced to leave her home behind.",
-    LEVANIA: "A strange monster roaming a strange land, Levania is a Dream Eater who's only desire is to consume human dreams. There are many other Dream Eaters, all driven by a common instinctual desire to become human. Not much is known about Levania past, or the origins of the Dream Eaters. When meeting Fio he is initially cold, not interested in her other than the dreams she provides. Over time they form a bond, Levania eventually learning to care for her well being and happiness, and he vows to become her friend when he is able to become human."
+    LEVANIA: "A strange monster roaming a strange land, Levania is a Dream Eater who's only desire is to consume human dreams. There are many other Dream Eaters, all driven by a common instinctual desire to become human. Not much is known about Levania past, or the origins of the Dream Eaters. When meeting Fio he is initially cold, not interested in her other than the dreams she provides. Over time they form a bond, Levania eventually learning to care for her well being and happiness, and he vows to become her friend when he is able to become human.",
+    PAPA: "Papa has the appearance of a floating, ghostlike being—a white sheet with black holes for eyes and two extendable black arms.",
+    DARK_MAMA: "Mama has the appearance of a floating, ghostlike being—a black sheet with white holes for eyes and two extendable black arms. Babe is a much smaller, similar being who rides in her apron.",
+    SARAFA: "",
+    SARYU: "",
+    TENH: "10H has the appearance of a young woman with shoulder length white hair and fair skin. She wears a standard YoRHa uniform consisting of a black dress, blindfold, and thigh high black boots.",
+    YUDIL: "",
+    MARIE: "",
+    YURIE: "",
+    YUZUKI: "He is an ordinary high school student that was suddenly transported into The Cage. He cares deeply for his mother and wishes to reunite with her.",
+    HINA: "She is a well-regarded honor student that was suddenly transported into The Cage. She cares deeply for her father and wishes to reunite with him.",
+    PRIYET: "",
+    POD: ""
 };
 
 export const modalText = {
