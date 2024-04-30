@@ -31,7 +31,7 @@ export default function Home() {
       <div className="hero">
         <div className="overlay">
           <h1><center>Акт 1: История Девочки и Монстра</center></h1>
-          <div style={{ height: '5600px' }} />
+          <div style={{ height: '115600px' }} />
           <div className="text-block">Молодая девочка в чёрном платье идёт сквозь ряды каменных башен.</div>
           <JumpingImage image="/images/LevaniaGirl.png" width="136px" height="350px" text="" name="..." />
           <div style={{ height: '500px' }} />
@@ -106,20 +106,20 @@ export default function Home() {
           <div className="text-block">На этой ноте они оба превращаются в оружие. Мама говорит, что, наконец-то, их истории восстановлены. Мы видим, как Мама передаёт другой Маме оружие Фио и Левании. Это было нелёгкое приключение. Воспоминания обоих были очень сильно повреждены. Мама упоминает, что они должны собрать все истории. После чего присоединяется к огромному потоку из Мам и Перевозчиков, летящих сквозь башни Клетки.</div>
 
           <h1><center>Акт 2: История Солнца и Луны</center></h1>
-          <JumpingImage image="/images/Yuzuki.png" width="147px" height="350px" text={characterStory.YUZUKI} name="Юзуки" />
-          <JumpingImage image="/images/Yurie.png" width="147px" height="350px" text={characterStory.YURIE} name="Юриэ" />
-          <JumpingImage image="/images/Priyet.png" width="147px" height="350px" text={characterStory.PRIYET} name="Пуриэ" />
-          <JumpingImage image="/images/Dark_Mama.png" width="147px" height="350px" text={characterStory.DARK_MAMA} name="Темная Мама и ребенок" />
-          <JumpingImage image="/images/Yudil.png" width="147px" height="350px" text={characterStory.YUDIL} name="Юдиль" />
-          <JumpingImage image="/images/Marie.png" width="147px" height="350px" text={characterStory.MARIE} name="Мари" />
-          <JumpingImage image="/images/Hina.png" width="147px" height="350px" text={characterStory.HINA} name="Хина" />
-          <JumpingImage image="/images/Papa.png" width="147px" height="350px" text={characterStory.PAPA} name="Папа" />
-          <JumpingImage image="/images/Saryu.png" width="147px" height="350px" text={characterStory.SARYU} name="Сарью" />
-          <JumpingImage image="/images/SARAFA.png" width="147px" height="350px" text={characterStory.SARAFA} name="Сарафа" />
+          <JumpingImage image="/images/Yuzuki.png" width="271px" height="350px" text={characterStory.YUZUKI} name="Юзуки" />
+          <JumpingImage image="/images/Yurie.png" width="137px" height="350px" text={characterStory.YURIE} name="Юриэ" />
+          <JumpingImage image="/images/Priyet.png" width="303px" height="350px" text={characterStory.PRIYET} name="Пуриэ" />
+          <JumpingImage image="/images/Dark_Mama.png" width="380px" height="350px" text={characterStory.DARK_MAMA} name="Темная Мама и ребенок" />
+          <JumpingImage image="/images/Yudil.png" width="285px" height="350px" text={characterStory.YUDIL} name="Юдиль" />
+          <JumpingImage image="/images/Marie.png" width="137px" height="350px" text={characterStory.MARIE} name="Мари" />
+          <JumpingImage image="/images/Hina.png" width="190px" height="350px" text={characterStory.HINA} name="Хина" />
+          <JumpingImage image="/images/Papa.png" width="290px" height="330px" text={characterStory.PAPA} name="Папа" />
+          <JumpingImage image="/images/Saryu.png" width="195px" height="350px" text={characterStory.SARYU} name="Сарью" />
+          <JumpingImage image="/images/SARAFA.png" width="239px" height="350px" text={characterStory.SARAFA} name="Сарафа" />
 
           <h1><center>Акт 3: История людей и мира</center></h1>
-          <JumpingImage image="/images/10H.png" width="147px" height="350px" text={characterStory.TENH} name="10H" />
-          <JumpingImage image="/images/Pod_006.png" width="147px" height="350px" text={characterStory.POD} name="Pod 006" />
+          <JumpingImage image="/images/10H.png" width="212px" height="350px" text={characterStory.TENH} name="10H" />
+          <JumpingImage image="/images/Pod_006.png" width="245px" height="350px" text={characterStory.POD} name="Pod 006" />
           <div className="text-block">Мама говорит, что все персонажи игры не более чем воспоминания, сохраненные в оружии. А клетка это место, где эти воспоминания хранятся. Раньше Клетка выглядела как на 1 скриншоте, но бесконечные атаки врагов превратили её в то место, что мы видим в игре.</div>
 
           <div className="text-block">Говоря проще, в Клетке хранятся воспоминания, Мамы перерабатывают их в оружие, которым мы кромсаем врагов со времен Drakengard.</div>
