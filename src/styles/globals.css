@@ -23,8 +23,8 @@
 }
 
 .text-block {
-  display: inline-block;
-  background-color: rgba(0, 0, 0, 0.5);
+  display: table;
+  box-shadow: inset 0px 0px 0px 1000px rgba(0, 0, 0, 0.5);
   /* Black background with transparency */
   color: white;
   /* White text color */
