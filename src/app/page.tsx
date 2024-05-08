@@ -30,13 +30,17 @@ export default function Home() {
     <main className="text-container">
       <div className="hero">
         <div className="overlay">
-          <h1><center>Акт 1: История Девочки и Монстра</center></h1>
+
+          <div className='scale-out-vertical'><h1><center>Акт 1: История Девочки и Монстра</center></h1></div>
+
           <div style={{ height: '5000px' }} />
+
           <span className="text-block">Молодая девочка в чёрном платье идёт сквозь ряды каменных башен.</span>
 
           <JumpingImage image="/images/LevaniaGirl.png" width="136px" height="350px" text="" name="..." />
 
           <div style={{ height: '5000px' }} />
+          
           <span className="text-block">Спустя некоторое время она встречает левитирующее белое существо, именуемое <b>“Мама”</b>.</span>
 
           <JumpingImage image="/images/Mama.png" width="200px" height="200px" text={characterStory.MAMA} name="Мама" />
@@ -73,7 +77,7 @@ export default function Home() {
           <span className="text-block">Она даже немного приоткрывает тайну, что то место, где девушка очнулась, и то песчаное место, по которому они сейчас путешествуют - всё это лишь небольшая часть Клетки.</span>
           <span className="text-block">И Клетка - место, в котором очень много тайн.</span>
           <span className="text-block">Очистив от искажений 4 пугала девушка завершает историю, что хранилась в посохе.</span>
-          <span className="text-block">За это девочка получает “Волю”.</span>
+          <span className="text-block">За это девочка получает <b>“Волю”</b>.</span>
           <span className="text-block">Один из потерянных ею фрагментов.</span>
           <span className="text-block">Перед героями возникает новая лестница, а, значит, путь к следующим историям.</span>
           <span className="text-block">Следующей историей, которую очищает девочка, оказывается история охотницы с металлическими протезами.</span>
@@ -83,7 +87,7 @@ export default function Home() {
 
           <JumpingImage image="/images/Hunter.png" width="178px" height="350px" text={characterStory.FRENRIZE} name="Френлиза" />
 
-          <span className="text-block">Восстановив историю охотницы, девочка получает следующий фрагмент - “Надежда”.</span>
+          <span className="text-block">Восстановив историю охотницы, девочка получает следующий фрагмент - <b>“Надежда”</b>.</span>
           <span className="text-block">Ей предстоит ещё много исправить и она поднимается по следующей лестнице.</span>
           <span className="text-block">Следующая статуя держит пистолет.</span>
           <span className="text-block">И хранит в себе историю механического солдата.</span>
@@ -93,7 +97,7 @@ export default function Home() {
           <span className="text-block">Во время путешествия по этой части Клетки герои снова встречают чёрного монстра.</span>
           <span className="text-block">В этот раз он сбегает только завидев их.</span>
           <span className="text-block">Старик явно знал девочку и чёрного монстра и разговаривал словно ребёнок.</span>
-          <span className="text-block">Восстановив финальное воспоминание из пистолета девочка получает “Молитву”.</span>
+          <span className="text-block">Восстановив финальное воспоминание из пистолета девочка получает <b>“Молитву”</b>.</span>
           <span className="text-block">После чего продолжает путь.</span>
           <span className="text-block">Новая часть Клетки выглядит иначе.</span>
           <span className="text-block">Всюду текут водопады и летают существа, похожие на китов.</span>
@@ -104,12 +108,12 @@ export default function Home() {
 
           <span className="text-block">Герои в очередной раз встречают чёрного монстра.</span>
           <span className="text-block">Он танцевал и хохотал, но, завидев персонажей, испугался и сбежал.</span>
-          <span className="text-block">Восстановив историю из катаны девушка обретает “Гнев”.</span>
+          <span className="text-block">Восстановив историю из катаны девушка обретает <b>“Гнев”</b>.</span>
           <span className="text-block">Мама говорит, что приближается момент, когда девочке нужно будет сделать выбор.</span>
           <span className="text-block">И они продолжают путь в следующую часть Клетки.</span>
           <span className="text-block">Теперь Клетка вся покрыта снегом.</span>
           <span className="text-block">Статуи этой части Клетки держат копье, в котором содержится история путешественника.</span>
-          <span className="text-block">Восстановив все части копья девочка получает “Печаль”.</span>
+          <span className="text-block">Восстановив все части копья девочка получает <b>“Печаль”</b>.</span>
           <span className="text-block">Новая лестница, ведущая к последнему фрагменту.</span>
 
           <JumpingImage image="/images/Argo.png" width="175px" height="350px" text={characterStory.ARGO} name="Арго" />
@@ -141,7 +145,7 @@ export default function Home() {
           <span className="text-block">Монстр не мог жить с этим, потому что они с девочкой стали друзьями.</span>
           <span className="text-block">Так же, как монстр принял форму девочки, так девочка превратилась в монстра.</span>
           <span className="text-block">Именно её они с Мамой встречали на своём пути в Клетке.</span>
-          <span className="text-block">Героиня получает финальный фрагмент — “Речь”.</span>
+          <span className="text-block">Героиня получает финальный фрагмент — <b>“Речь”</b>.</span>
           <span className="text-block">Настало время объявить, чего же она желает.</span>
           <span className="text-block">А желает она вернуть человеческой обличье той, у кого она его отняла.</span>
           <span className="text-block">Время обернулось вспять.</span>
@@ -250,7 +254,8 @@ export default function Home() {
           <span className="text-block">Это было нелёгкое приключение.</span>
           <span className="text-block">Воспоминания обоих были очень сильно повреждены.</span>
           <span className="text-block">Мама упоминает, что они должны собрать все истории.</span>
-          <span className="text-block">После чего присоединяется к огромному потоку из Мам и Перевозчиков, летящих сквозь башни Клетки.</span>
+          <div className='right'><span className="text-block">После чего присоединяется к огромному потоку из Мам и Перевозчиков, летящих сквозь башни Клетки.</span></div>
+          <div style={{ height: '200px' }} />
 
           <h1><center>Акт 2: История Солнца и Луны</center></h1>
           <JumpingImage image="/images/Yuzuki.png" width="271px" height="350px" text={characterStory.YUZUKI} name="Юзуки" />

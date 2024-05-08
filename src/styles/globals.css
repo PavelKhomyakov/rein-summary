@@ -10,8 +10,42 @@
   z-index: -1;
 }
 
+.scale-out-vertical {
+	-webkit-animation: scale-out-vertical 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 5s both;
+	        animation: scale-out-vertical 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 5s both;
+}
+
+@-webkit-keyframes scale-out-vertical {
+  0% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    opacity: 1;
+  }
+}
+@keyframes scale-out-vertical {
+  0% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    opacity: 1;
+  }
+}
+
 .right {
-  text-align: right;
+  float: right;
+}
+
+.center {
+  float: center;
 }
 
 .text-container {
@@ -19,47 +53,35 @@
   line-height: 1.6;
   position: relative;
   z-index: 1;
-  animation: fade-in 4s;
+  animation: fade-in 5s;
 }
 
 .text-block {
   display: table;
-  box-shadow: inset 0px 0px 0px 1000px rgba(0, 0, 0, 0.5);
-  /* Black background with transparency */
-  color: white;
-  /* White text color */
+  box-shadow: inset 0px 0px 0px 1000px rgba(0, 0, 0, 0.4);
+  color: rgb(255, 246, 222);
   padding: 5px 10px;
-  /* Adjust padding as needed */
   margin: 5px;
-  /* Add margin around the blocks */
   border-radius: 5px;
-  /* Add border radius for rounded corners */
 }
 
 .text-block-glow {
   display: inline-block;
   background-color: rgba(0, 0, 0, 0.5);
-  /* Black background with transparency */
-  color: white;
-  /* White text color */
+  color: rgb(255, 246, 222);
   padding: 5px 10px;
-  /* Adjust padding as needed */
   margin: 5px;
-  /* Add margin around the blocks */
   border-radius: 5px;
-  /* Add border radius for rounded corners */
   animation: glow 1.5s infinite alternate;
 }
 
 @keyframes glow {
   from {
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-    /* Start with a small glow */
+    box-shadow: 0 0 5px #ffffff80;
   }
 
   to {
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-    /* Increase glow intensity */
+    box-shadow: 0 0 20px rgba(253, 239, 191, 0.5);
   }
 }
 
@@ -83,10 +105,12 @@ html.lenis body {
 .lenis.lenis-scrolling iframe {
   pointer-events: none;
 }
+
 @keyframes fade-in {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 100;
   }
@@ -94,7 +118,8 @@ html.lenis body {
 
 /* Общие стили для скроллбара */
 ::-webkit-scrollbar {
-  width: 12px; /* Ширина скроллбара */
+  width: 12px;
+  /* Ширина скроллбара */
 }
 
 /* Кнопка скроллбара */
@@ -109,103 +134,108 @@ html.lenis body {
 
 /* Блок, по которому перемещается ползунок */
 ::-webkit-scrollbar-thumb {
-  background-color: #6f6f6f; /* Цвет ползунка */
-  border-radius: 6px; /* Закругленные углы */
-  border: 3px solid #2b2b2b; /* Обводка ползунка */
+  background-color: #6f6f6f;
+  /* Цвет ползунка */
+  border-radius: 6px;
+  /* Закругленные углы */
+  border: 3px solid #2b2b2b;
+  /* Обводка ползунка */
 }
 
 /* При наведении курсора на скроллбар */
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #9f9f9f; /* Цвет ползунка при наведении */
+  background-color: #9f9f9f;
+  /* Цвет ползунка при наведении */
 }
 
 /* При активации скроллбара */
 ::-webkit-scrollbar-thumb:active {
-  background-color: #cfcfcf; /* Цвет ползунка при активации */
+  background-color: #cfcfcf;
+  /* Цвет ползунка при активации */
 }
 
-body{
-  display:flex !important;
-  flex-direction:column
-}
-.overlay{
-  position:absolute;
-  width:100%;
-  height:100vh;
-
-  z-index:1
-}
-.hero{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  width:100%;
-  height:100vh;
-  background-position:center
+body {
+  display: flex !important;
+  flex-direction: column
 }
 
-.hero:after{
-  content:"";
-  background-image:url("https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png");
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+
+  z-index: 1
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-position: center
+}
+
+.hero:after {
+  content: "";
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png");
   height: 300%;
   width: 300%;
   position: fixed;
-  opacity:0.1;
-   animation: animateGrain 8s steps(10) infinite;
+  opacity: 0.1;
+  animation: animateGrain 8s steps(10) infinite;
 }
 
-@keyframes animateGrain{
-  0%, 100% { transform:translate(0, 0) }
-  10%{
-    transform:translate(-5%,-10%)
+@keyframes animateGrain {
+
+  0%,
+  100% {
+    transform: translate(0, 0)
   }
-  20%{
-    transform:translate(-15%,-20%)
+
+  10% {
+    transform: translate(-5%, -10%)
   }
-  30%{
-    transform:translate(-5%,-10%)
+
+  20% {
+    transform: translate(-15%, -20%)
   }
-  40%{
-    transform:translate(-15%,-20%)
+
+  30% {
+    transform: translate(-5%, -10%)
   }
-  
-  50%{
-    transform:translate(-5%,-10%)
+
+  40% {
+    transform: translate(-15%, -20%)
   }
-  60%{
-    transform:translate(-15%,-20%)
+
+  50% {
+    transform: translate(-5%, -10%)
   }
-  70%{
-    transform:translate(-5%,-10%)
+
+  60% {
+    transform: translate(-15%, -20%)
   }
-  80%{
-    transform:translate(-15%,-20%)
+
+  70% {
+    transform: translate(-5%, -10%)
   }
-  90%{
-    transform:translate(-5%,-10%)
+
+  80% {
+    transform: translate(-15%, -20%)
   }
-  100%{
-    transform:translate(-15%,-20%)
+
+  90% {
+    transform: translate(-5%, -10%)
   }
- 
+
+  100% {
+    transform: translate(-15%, -20%)
+  }
+
 }
+
 /* Test CSS generated by AI with style like Rein. Maybe delete later */
-::selection {
-  background-color: #f4c242;
-}
-
-a {
-  color: #f4c242;
-}
-
-p {
-  margin: 0 0 1rem 0;
-}
-
-mark {
-  background-color: #292524;
-  color: #f4c242;
-}
 
 h1 {
   font-weight: normal;
@@ -241,74 +271,6 @@ h6 {
   letter-spacing: 0.1rem;
 }
 
-blockquote {
-  padding: 0.5rem;
-}
-
-blockquote {
-  position: relative;
-}
-
-blockquote:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -1.5rem;
-  bottom: 0;
-  height: 100%;
-  width: 0.3rem;
-  border: solid #f4c242;
-  border-width: 0 0.2rem 0 0.6rem;
-}
-
-cite {
-  padding-left: 2rem;
-}
-
-cite {
-  position: relative;
-}
-
-cite:before {
-  content: '';
-  position: absolute;
-  width: 0.7rem;
-  height: 0.7rem;
-  background-color: #292524;
-  margin-left: -1rem;
-  top: 0.25em;
-}
-
-hr {
-  margin: 1rem 0;
-  border-top: solid #f4c242;
-  border-width: 0.1rem 0 0 0;
-}
-
-table {
-  border-collapse: collapse;
-  font-weight: inherit;
-}
-
-th {
-  font-weight: normal;
-}
-
-td,
-th {
-  padding: 0.5rem;
-}
-
-th {
-  text-align: left;
-  border-bottom: 0.1rem solid #292524;
-}
-
-pre {
-  background-color: #f4c242;
-  padding: 1rem;
-}
-
 body {
   background-color: #292524;
   font-family: helvetica, sans-serif;
@@ -326,48 +288,4 @@ body {
   background-image: -o-linear-gradient(left, #2c2927 1px, rgba(44, 41, 39, 0) 1px), -o-linear-gradient(top, #2c2927 1px, rgba(44, 41, 39, 0) 1px);
   background-image: -ms-linear-gradient(left, #2c2927 1px, rgba(44, 41, 39, 0) 1px), -ms-linear-gradient(top, #2c2927 1px, rgba(44, 41, 39, 0) 1px);
   background-image: linear-gradient(to right, #2c2927 1px, rgba(44, 41, 39, 0) 1px), linear-gradient(to bottom, #2c2927 1px, rgba(44, 41, 39, 0) 1px);
-}
-
-::selection {
-  background-color: #f4c242;
-}
-
-a {
-  color: inherit;
-}
-
-p {
-  margin: 0 0 1rem 0;
-}
-
-mark {
-  background-color: #292524;
-  color: #f4c242;
-}
-
-button {
-  display: inline-block;
-  padding: 8px 10px;
-  background-color: #2d2d2d;
-  color: #ffffff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 9px;
-  font-weight: bold;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  transition: background-color 0.3s, transform 0.2s;
-  width: 13%
-}
-
-button:hover {
-  background-color: #404040;
-  transform: translateY(-2px);
-}
-
-button:active {
-  background-color: #2d2d2d;
-  transform: translateY(0);
 }
